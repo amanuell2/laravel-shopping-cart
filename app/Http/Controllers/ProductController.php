@@ -143,7 +143,7 @@ class ProductController extends Controller
         }
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
-        stripe::setApiKey('sk_test_neEacTkBs0pH66uyxWnig1Mh');
+        stripe::setApiKey('Your stripe api key');
 
         try {
             Charge::create(array(
